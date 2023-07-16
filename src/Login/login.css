@@ -1,0 +1,22 @@
+/* importing the style conponent */
+.form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form >input{
+    padding:12px 20px;
+    width: 70%;
+    border: solid 1px rgb(241, 228, 228);
+    border-radius: 5px;
+}
+
+.form >button{
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    background-color: rgb(102, 125, 66);
+    border-radius: 5px;
+    color: white;
+}
+
