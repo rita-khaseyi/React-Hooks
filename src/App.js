@@ -2,7 +2,7 @@
 import './App.css';
 import { Routes,Route,Navigate } from 'react-router-dom';
 import LoginPage from './Login/LoginPage';
-import Navbar from './navbar/navbar';
+import Navbar from './navbar';
 import ProductPage from './products/products';
 import AddProductPage from './products/addProduct';
 import ProductDetailsPage from './products/productDetails';
