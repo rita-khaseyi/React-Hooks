@@ -1,20 +1,22 @@
-
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './addProduct.css';
 
 const AddProductPage = () => {
+  
   const navigate = useNavigate();
 
+  
   const [title, setTitle] = useState('');
   const [price, setPrice] = useState('');
   const [discountPercentage, setDiscountPercentage] = useState('');
 
+ 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
+    
       const response = await fetch('https://dummyjson.com/products/add', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -24,19 +26,23 @@ const AddProductPage = () => {
           discountPercentage,
         }),
       });
+
       const newProduct = await response.json();
 
-      // Redirect to ProductPage and pass the new product ID as a parameter
+     
       navigate(`/products?addedProduct=${newProduct.id}`);
     } catch (error) {
+      
       console.error(error);
     }
   };
 
+ 
   return (
     <div className="container">
       <h1 className="heading">Add Product</h1>
       <form onSubmit={handleSubmit}>
+       
         <input
           type="text"
           value={title}
@@ -44,6 +50,7 @@ const AddProductPage = () => {
           placeholder="Title"
           className="input"
         />
+       
         <input
           type="text"
           value={price}
@@ -51,6 +58,7 @@ const AddProductPage = () => {
           placeholder="Price"
           className="input"
         />
+ 
         <input
           type="text"
           value={discountPercentage}
@@ -58,14 +66,11 @@ const AddProductPage = () => {
           placeholder="Discount Percentage"
           className="input"
         />
+       
         <button type="submit" className="button">Add Product</button>
       </form>
     </div>
   );
-  
-
- 
 };
 
 export default AddProductPage;
-
