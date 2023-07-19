@@ -20,11 +20,11 @@ const ProductPage = () => {
         // Updating the 'products' state with the fetched data
         setProducts(data.products);
 
-        // Get query parameters from the current URL
+        // Getting the query parameters from the current URL
         const queryParams = new URLSearchParams(location.search);
         const addedProductId = queryParams.get('addedProduct');
 
-        // If 'addedProduct' query parameter exists, fetch the product with the specified ID
+        // If 'addedProduct' and query parameter exists, fetch the product with the specified ID
         if (addedProductId) {
           const addedProductResponse = await fetch(`https://dummyjson.com/products/${addedProductId}`);
           const addedProduct = await addedProductResponse.json();

@@ -9,7 +9,7 @@ const Navbar = () => {
     
     <nav className='navbar'>
      
-      <h3>Products</h3>
+   
 
       <ul className='ul'>
         <li><a href="/login">Login</a></li>

@@ -1,8 +1,6 @@
 
 .product{
-    /* border: solid grey 2px; */
-    
-    /* margin-bottom: 3%; */
+ 
     border-radius: 5px;
     text-align: center;
   }
@@ -12,16 +10,16 @@
     border:solid black 1px ;
   }
   .product button{
-    /* background-color: yellow; */
+   
     font-size: 24px;
   }
    .add-product-button {
-    /* Existing styles */
-    /* background-color: yellow; */
+  
+    margin-top: 3%;
     font-size: 24px;
-    /* Additional styles */
+   
     color: black;
-    border: 1px solid black;
+    border: none;
     padding: 10px 20px;
     border-radius: 4px;
     
@@ -29,13 +27,9 @@
     transition: background-color 0.3s ease;
   }
   
-  .add-product-button:hover {
-    background-color: palevioletred;
-  }
+
   
-   .add-product-button:active {
-    background-color: palevioletred;
-  }
+  
   
   .add-product-button:focus {
     outline: none;
@@ -55,7 +49,7 @@
     margin: 2% ;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 40px;
 }
 .main{
     width: 300px;

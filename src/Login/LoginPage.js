@@ -45,7 +45,7 @@ return(
             <input type="password" placeholder="Enter your password"  onChange={(e)=>setPassword(e.target.value)} />
             <br/>
             <br/>
-            <Link to={`/products`}> <button  type="submit">Login</button></Link> 
+            <Link to={`/products`}> <button className='button' type="submit">Login</button></Link> 
 
 
         </form>

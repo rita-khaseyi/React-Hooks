@@ -11,12 +11,12 @@
     border-radius: 5px;
 }
 
-.form >button{
+.button{
     border: none;
     outline: none;
     padding: 10px 12px;
     background-color: rgb(102, 125, 66);
     border-radius: 5px;
-    color: white;
+    color: green;
 }
 
